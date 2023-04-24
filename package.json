@@ -1,0 +1,14 @@
+{
+  "name": "image-optimizer",
+  "version": "1.0.0",
+  "description": "Main goal of the task is to implement an approach with responsive images and lazy loading images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dzmitry Skurat",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
