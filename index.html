@@ -1,25 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hometask</title>
-    <style>
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
-    </style>
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="UTF-8">
+  <title>Hometask</title>
+  <style>
+    img {
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+    }
+  </style>
 </head>
 <body>
-    <img src="images/image1.jpeg" alt=''/>
-    <img src="images/image2.jpeg" alt=''/>
-    <img src="images/image3.jpeg" alt=''/>
-    <img src="images/image4.jpeg" alt=''/>
-    <img src="images/image5.jpeg" alt=''/>
-    <img src="images/image6.jpeg" alt=''/>
-    <img src="images/image7.jpeg" alt=''/>
-    <img src="images/image8.jpeg" alt=''/>
-    <img src="images/image9.jpeg" alt=''/>
-    <img src="images/image10.jpeg" alt=''/>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image1-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image1-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image1-1024.webp" />
+    <img src="assets/webps/image1-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image2-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image2-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image2-1024.webp" />
+    <img src="assets/webps/image2-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image3-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image3-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image3-1024.webp" />
+    <img src="assets/webps/image3-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image4-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image4-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image4-1024.webp" />
+    <img src="assets/webps/image4-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image5-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image5-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image5-1024.webp" />
+    <img src="assets/webps/image5-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image6-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image6-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image6-1024.webp" />
+    <img src="assets/webps/image6-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image7-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image7-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image7-1024.webp" />
+    <img src="assets/webps/image7-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image8-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image8-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image8-1024.webp" />
+    <img src="assets/webps/image8-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image9-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image9-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image9-1024.webp" />
+    <img src="assets/webps/image9-1920.webp" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/webps/image10-320.webp" />
+    <source media="(max-width: 768px)" srcset="assets/webps/image10-768.webp" />
+    <source media="(max-width: 1024px)" srcset="assets/webps/image10-1024.webp" />
+    <img src="assets/webps/image10-1920.webp" loading="lazy" />
+  </picture>
+  <!-- Add jpeg images for browsers that are not support webp with the same resolutions (320,
+768, 1024 and 1920 pixels) and compress them (80%). Include the sliced images to the page
+via srcset and media -->
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image1-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image1-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image1-1024.jpeg" />
+    <img src="assets/compressed/image1-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image2-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image2-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image2-1024.jpeg" />
+    <img src="assets/compressed/image2-1920.jpeg" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image3-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image3-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image3-1024.jpeg" />
+    <img src="assets/compressed/image3-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image4-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image4-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image4-1024.jpeg" />
+    <img src="assets/compressed/image4-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image5-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image5-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image5-1024.jpeg" />
+    <img src="assets/compressed/image5-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image6-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image6-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image6-1024.jpeg" />
+    <img src="assets/compressed/image6-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image7-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image7-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image7-1024.jpeg" />
+    <img src="assets/compressed/image7-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image8-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image8-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image8-1024.jpeg" />
+    <img src="assets/compressed/image8-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image9-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image9-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image9-1024.jpeg" />
+    <img src="assets/compressed/image9-1920.jpeg" loading="lazy" />
+  </picture>
+  <picture>
+    <source media="(max-width: 320px)" srcset="assets/compressed/image10-320.jpeg" />
+    <source media="(max-width: 768px)" srcset="assets/compressed/image10-768.jpeg" />
+    <source media="(max-width: 1024px)" srcset="assets/compressed/image10-1024.jpeg" />
+    <img src="assets/compressed/image10-1920.jpeg" loading="lazy" />
+  </picture>
+
 </body>
 </html>

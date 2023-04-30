@@ -4,11 +4,16 @@
   "description": "Main goal of the task is to implement an approach with responsive images and lazy loading images.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dzmitry Skurat",
   "license": "ISC",
   "dependencies": {
-    "sharp": "^0.32.0"
+    "nodemon": "^2.0.22",
+    "sharp": "^0.32.1"
+  },
+  "devDependencies": {
+    "compress-images": "^2.0.5"
   }
 }
